@@ -15,7 +15,7 @@ describe('Deploy 검사', function () {
     const MytokenFactory = await ethers.getContractFactory('MyNFT');
 
     try {
-      mytoken = await MytokenFactory.deploy('MyNFT', 'MNFT');
+      mytoken = await MytokenFactory.deploy('CoJinNam', 'CJN');
     } catch (error) {
       mytoken = await (MytokenFactory as any).deploy();
     }
